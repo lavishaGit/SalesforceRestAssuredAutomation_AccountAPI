@@ -7,7 +7,6 @@
 	</listeners>
   <test  name="Test_Login">
     <classes>
-      <class name="com.salesforce.loginTest.LoginFunctionality"/>
             <class name="com.salesforce.crud.Validating_Crud"/>
       
     </classes>
