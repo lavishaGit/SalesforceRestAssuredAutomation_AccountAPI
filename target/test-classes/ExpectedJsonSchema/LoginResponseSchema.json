@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "access_token": {
+      "type": "string"
+    },
+    "instance_url": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "token_type": {
+      "type": "string"
+    },
+    "issued_at": {
+      "type": "string"
+    },
+    "signature": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "access_token",
+    "instance_url",
+    "id",
+    "token_type",
+    "issued_at",
+    "signature"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Name": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "string"
+    },
+    "ParentId": {
+      "type": "null"
+    },
+    "BillingStreet": {
+      "type": "string"
+    },
+    "BillingCity": {
+      "type": "string"
+    },
+    "BillingState": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Name",
+    "Type",
+    "ParentId",
+    "BillingStreet",
+    "BillingCity",
+    "BillingState"
+  ]
+}
