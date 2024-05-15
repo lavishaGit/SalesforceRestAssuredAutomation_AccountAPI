@@ -5,9 +5,9 @@
     <classes>
       <class name="com.salesforce.crud.Validating_Crud">
         <methods>
+          <include name="validateGetAccountAPI"/>
           <include name="beforeClass"/>
           <include name="beforeSuite"/>
-          <include name="GetAllRecentAccounts"/>
         </methods>
       </class> <!-- com.salesforce.crud.Validating_Crud -->
     </classes>

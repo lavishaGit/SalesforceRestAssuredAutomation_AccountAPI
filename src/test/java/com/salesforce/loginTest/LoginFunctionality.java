@@ -38,7 +38,8 @@ public class LoginFunctionality extends BaseTest{
 	public void validatelogin() {
 		 
 
-	Response dataResponse=	apiHelper.login("lavisha2212ycd8ZcQowo13cV8nstyAyFQ6Q","sweety123@yahoo.com","3MVG9.OYpR1Qkmcx3JciEcDg5fAnyusxzOcia4.TnoSKSMmxr6d36PO_n8PvlfCj6SIUaSF4qoJKs33a4yZrL","9920B1D54DA71FE20D1E8E971C583E0075845CD3E39F1630DDA3C245EAA3575A","password");
+	Response dataResponse=	apiHelper.login(EnvironmentDetails.getProperty("password"),EnvironmentDetails.getProperty("username"),
+			EnvironmentDetails.getProperty("client_id"),EnvironmentDetails.getProperty("client_secret"),EnvironmentDetails.getProperty("grant_type"));
 	
        LoginResponsePojo loginResponse = dataResponse.getBody().as(LoginResponsePojo.class);
       /* if (response.getStatusCode() == HttpStatus.SC_CREATED) {

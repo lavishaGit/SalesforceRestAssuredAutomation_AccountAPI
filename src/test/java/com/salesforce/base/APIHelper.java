@@ -74,7 +74,7 @@ public class APIHelper {
     formParams.put("password", loginRequest.getPassword());
     reqSpec.formParams(formParams) ;
     
-    //  reqSpec.headers(getHeaders(true));
+   reqSpec.headers("header","application/json;charset=UTF-8");
       reqSpec.log().all();
         Response response = null;
        
