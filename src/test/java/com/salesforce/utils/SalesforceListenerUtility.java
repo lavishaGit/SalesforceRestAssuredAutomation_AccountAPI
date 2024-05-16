@@ -19,6 +19,7 @@ public class SalesforceListenerUtility  implements ITestListener {
 		// Test container for report is created........");
 
 	}
+	
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 				ListenerLog.info(result.getMethod().getMethodName() + ".......test execution successful........");
@@ -42,17 +43,15 @@ public class SalesforceListenerUtility  implements ITestListener {
 	}
 	public void onStart(ITestContext context) {
 		// context contains all the informa about the tests
-				//ListenerLog.info(".......<test> execution started........");
+			ListenerLog.info(".......<test> execution started........");
 				report.startExtentReport();
 	}
 	public void onFinish(ITestContext context) {
-		//ListenerLog.info(".......<test> execution completed........");
+		ListenerLog.info(".......<test> execution completed........");
 		report.endReport();	}
 
-
-
+*/
 	
 
 
 }
-s
