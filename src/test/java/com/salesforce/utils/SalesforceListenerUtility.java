@@ -42,11 +42,11 @@ public class SalesforceListenerUtility  implements ITestListener {
 	}
 	public void onStart(ITestContext context) {
 		// context contains all the informa about the tests
-				ListenerLog.info(".......<test> execution started........");
+				//ListenerLog.info(".......<test> execution started........");
 				report.startExtentReport();
 	}
 	public void onFinish(ITestContext context) {
-		ListenerLog.info(".......<test> execution completed........");
+		//ListenerLog.info(".......<test> execution completed........");
 		report.endReport();	}
 
 
@@ -55,3 +55,4 @@ public class SalesforceListenerUtility  implements ITestListener {
 
 
 }
+s
